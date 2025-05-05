@@ -1,0 +1,67 @@
+.mf-ok-text {
+    background: linear-gradient(95deg, var(--color-primary) 10%, var(--color-tertiary) 47.5%, var(--color-pink) 77.5%, var(--color-secondary) 100%) 95%/200% 100%;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.page-title {margin: 50px 0;}
+.rn-sub-badge-h1 {
+    line-height: 1.4;
+    font-size: 30px!important;
+}
+.form_brif {
+    display: grid;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 300px));
+}
+.form-group.btn_block > button#submit{
+    width: 100%;
+}
+pre, pre.wp-block-code {
+    background: black!important;
+    color: green!important;
+}
+.block_function {
+    display: flex;
+    flex-direction: column;
+}
+select{
+    color: black!important;
+}
+.form-group.block_select_functions {
+    display: flex!important;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-group.block_select_functions > .select_funtion > input[type="checkbox"] {
+    position: relative!important; 
+    width: auto!important;
+    height: auto!important;
+    z-index: 10!important;
+    top: 1px!important;
+    left: 18px!important;
+}
+.form_brif > .block_design > .title > p,
+.form_brif > .block_function > .title > p,
+.form_brif > .block_contact > .title > p {
+    font-size: 2.4rem;
+    position: relative;
+}
+
+.form_brif > .block_design > .title > p::after,
+.form_brif > .block_function > .title > p::after,
+.form_brif > .block_contact > .title > p::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(95deg, var(--color-primary) 10%, var(--color-tertiary) 47.5%, var(--color-pink) 77.5%, var(--color-secondary) 100%);
+    width: 87px;
+    height: 5px; 
+    right: auto;
+}
+.form_brif > .block_function > .title > p::after{width: 145px;}
+.form_brif > .block_contact > .title > p::after{width: 112px;}

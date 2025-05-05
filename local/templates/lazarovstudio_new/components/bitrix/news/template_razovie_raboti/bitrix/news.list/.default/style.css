@@ -1,0 +1,18 @@
+.rn-card.card-list-view {
+    border: 1px solid transparent;
+    border-image-source: linear-gradient(95deg, var(--color-primary) 10%, var(--color-tertiary) 47.5%, var(--color-pink) 77.5%, var(--color-secondary) 100%);
+    border-image-slice: 1;
+    border-width: 1px;
+    transition: all .3s;
+}
+.rn-card.card-list-view:hover{
+    transition: all .3s;
+    border-image-source: linear-gradient(-95deg, var(--color-primary) 10%, var(--color-tertiary) 47%, var(--color-pink) 77%, var(--color-secondary) 100%);
+}
+.rn-card .inner .content {
+    flex-wrap: nowrap !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    align-items: center !important;
+    flex-basis: auto!important;
+}

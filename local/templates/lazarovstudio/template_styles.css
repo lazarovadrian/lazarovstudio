@@ -1,0 +1,10 @@
+font.tablebodytext {
+    display: none!important;
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 1000%;
+}
+.tariff-detail.container {
+    font-size: var(--h4);
+}

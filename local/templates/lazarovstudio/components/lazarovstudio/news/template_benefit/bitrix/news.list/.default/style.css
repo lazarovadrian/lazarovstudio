@@ -1,0 +1,27 @@
+.benefit_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 422px));
+    grid-gap: 20px;
+    justify-content: center;
+}
+.benefit_list > .benefit_item{}
+.benefit_list > .benefit_item > img{
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+    display: block;
+}
+.benefit_list > .benefit_item > .title {
+    margin: 13px 0;
+    font-style: normal;
+    font-weight: var(--font-weight6);
+    font-size: var(--h4);
+    color: #E5E7EB;
+    text-wrap: balance;
+}
+.benefit_list > .benefit_item > .desc{
+    margin: 0 0 50px;
+    font-style: normal;
+    color: #9CA3AF;
+    text-wrap: balance;
+}

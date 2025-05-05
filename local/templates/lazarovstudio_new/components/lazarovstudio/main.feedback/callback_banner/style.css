@@ -1,0 +1,11 @@
+.mf-ok-text {
+    background: linear-gradient(95deg, var(--color-primary) 10%, var(--color-tertiary) 47.5%, var(--color-pink) 77.5%, var(--color-secondary) 100%) 95%/200% 100%;
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+textarea {
+    height: 120px!important;
+    resize: none!important;
+}

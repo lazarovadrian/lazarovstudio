@@ -1,0 +1,79 @@
+.services_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.services_list > .services_item {
+    background: #1E1E1E;
+    border-radius: 15px;
+    border: 1px solid #55245B;
+    padding: 55px 50px;
+    display: flex;
+    align-items: center;
+	flex-flow: row wrap;
+    gap: 25px;
+}
+.services_list > .services_item:nth-child(2){border: 1px solid #1C4A5D;}
+.services_list > .services_item:nth-child(3){border: 1px solid #585858;}
+.services_list > .services_item:nth-child(even){flex-direction: row-reverse;}
+.services_list > .services_item > .img {
+    max-width: 380px;
+    height: auto;
+    display: inline-block;
+}
+.services_list > .services_item > .img > a > img {
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+    display: block;
+}
+.services_list > .services_item > .info_item{
+	width: 100%;
+	max-width: 740px;
+}
+.services_list > .services_item > .info_item > .title > a{
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 1.4;
+	color: white;
+}
+.services_list > .services_item > .info_item > .desc,
+.services_list > .services_item > .info_item > p{
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.4;
+	color: white;
+}
+.services_list > .services_item > .info_item > .list_services_item > .title{
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 65px;
+	margin: 0;
+}
+.services_list > .services_item > .info_item > .list_services_item > ul{
+	display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    column-gap: 20px;
+	padding: 0;
+}
+.services_list > .services_item > .info_item > .list_services_item > ul > li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+	list-style-type: none;
+}
+.services_list > .services_item > .info_item > .list_services_item > ul > li::before{
+	content: url("/local/templates/lazarovstudio/components/bitrix/news.list/template_services_list/stars.svg");
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+/* .services_list > .services_item > .info_item > .btn-default{} */
+@media screen and (max-width:880px){
+	.services_list > .services_item{padding: 20px;}
+}

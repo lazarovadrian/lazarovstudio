@@ -1,0 +1,43 @@
+/* Container styles */
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Mobile menu visibility */
+@media only screen and (min-width: 651px) {
+    .popup-mobile-menu {
+        display: none !important;
+    }
+    
+    .mainmenu-nav {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .popup-mobile-menu {
+        display: block;
+    }
+    
+    .mainmenu-nav {
+        display: none;
+    }
+    
+    /* Container adjustments for mobile */
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        padding: 0 10px;
+    }
+} 

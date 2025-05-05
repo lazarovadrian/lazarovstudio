@@ -1,0 +1,8 @@
+.rn-accordion-style .card .card-header button{
+  font-size: var(--h4);
+}
+.rn-accordion-style .card .card-body{
+  .list{
+    font-size: var(--font-size-b1);
+  }
+}

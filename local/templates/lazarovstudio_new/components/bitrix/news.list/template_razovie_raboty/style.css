@@ -1,0 +1,29 @@
+.block_sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.block_section_title {
+    width: 100%;
+    max-width: 300px;
+    min-width: 300px;
+    height: auto;
+    margin: 10px;
+}
+.block_sections > .block_section_title > a {
+    border: 1px solid transparent;
+    border-image-source: linear-gradient(95deg, var(--color-primary) 10%, var(--color-tertiary) 47.5%, var(--color-pink) 77.5%, var(--color-secondary) 100%);
+    border-image-slice: 1;
+    border-width: 1px;
+    transition: all .3s;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-weight: bold;
+}
+.block_sections > .block_section_title > a:hover {
+    background: linear-gradient(95deg, var(--color-primary) 10%, var(--color-tertiary) 47.5%, var(--color-pink) 77.5%, var(--color-secondary) 100%) 98%/200% 100%;
+    border: 0;
+}

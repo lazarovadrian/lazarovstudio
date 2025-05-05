@@ -1,0 +1,36 @@
+.blog_list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(370px,1fr));
+  gap:50px;
+  .blog_item{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    .blog_title{
+      font-size:var(--h4);
+      line-height:var(--line-height-b4);
+      font-weight:bold;
+      text-wrap:balance;
+    }
+    .blog_item__list_data_see{
+      display:flex;
+      gap:20px;
+      .blog_date{
+        font-size:var(--font-size-b4);
+        line-height:var(--line-height-b4);
+      }
+      .blog_count_see{
+        font-size:var(--font-size-b4);
+        line-height:var(--line-height-b4);
+      }
+    }
+    .blog_preview{
+      line-height: var(--line-height-b3);
+      font-size:var(--font-size-b1);
+      text-wrap:balance;
+      >img{
+        padding: 20px 0;
+      }
+    }
+  }
+}
